@@ -815,6 +815,34 @@
       "required": false
     }
   ]
+},
+{
+  "id": "adtest-mcp",
+  "name": "AdTest.AI",
+  "description": "Score an image, video or text ad on 13 effectiveness dimensions before you spend on media; returns a section-by-section report with concrete fixes",
+  "command": "npx -y adtest-mcp",
+  "link": "https://github.com/menaker/adtest-mcp",
+  "installation_notes": "Install using npx. Requires an AdTest.AI developer API key (app.adtest.ai → Developer → Generate key); each successful analysis costs 1 credit.",
+  "is_builtin": false,
+  "endorsed": false,
+  "environmentVariables": [
+      {
+          "name": "ADTEST_API_KEY",
+          "description": "AdTest.AI developer API key",
+          "required": true
+      }
+  ]
+},
+{
+  "id": "mobopinions-survey-light",
+  "name": "MobOpinions Survey Light",
+  "description": "Build, target, launch and analyse consumer surveys with real panel respondents (71 tools)",
+  "url": "https://surveys.mobopinions.com/light-api/mcp",
+  "link": "https://github.com/menaker/mobopinions-survey-mcp",
+  "installation_notes": "Remote extension. Add the endpoint and sign in with a surveys.mobopinions.com account through OAuth 2.1 when prompted; no API key or environment variables.",
+  "is_builtin": false,
+  "endorsed": false,
+  "environmentVariables": [],
+  "type": "streamable-http"
 }
-
 ]
